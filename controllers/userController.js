@@ -102,3 +102,5 @@ async addFriend(req, res){
     }
 };
 
+module.exports = userController;
+
