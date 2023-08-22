@@ -12,7 +12,7 @@ const thoughtController = {
             return res.status(500).json(err);
         }
     },
-    // Get a thought by id
+    // Get a thought by 
     async getThought(req, res) {
         try {
             const thought = await Thought.findById(req.params.id);
@@ -27,7 +27,7 @@ const thoughtController = {
         }
 },
 // Create a thought
-async creatThought(req, res) {
+async createThought(req, res) {
     try {
         const thought = await Thought.create(req, res);
         await User.findByIdAndUpdate(req.body.userId,
