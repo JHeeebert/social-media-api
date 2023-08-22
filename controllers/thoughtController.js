@@ -29,7 +29,7 @@ const thoughtController = {
 // Create a thought
 async createThought(req, res) {
     try {
-        const thought = await Thought.create(req, res);
+        const thought = await Thought.create(req.body);
         await User.findByIdAndUpdate(req.body.userId,
         { $addToSet: { thoughts: thought._id } },
         { runValidators: true }
