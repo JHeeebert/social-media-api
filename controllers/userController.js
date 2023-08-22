@@ -2,8 +2,8 @@ const { User, Thought } = require('../models');
 
 // Creating the User Controller
 const userController = {
-    // Get all users
-    async getUsers(req, res) {
+    // Get all users with thoughts and friends populated
+    async getUsers(res) {
         try {
             const users = await User.find()
                 .populate('thoughts friends', '-__v')
@@ -14,7 +14,7 @@ const userController = {
             res.status(500).json(err);
         }
     },
-        // Get a single user
+        // Get a single user by ID with thoughts and friends populated
     async getUser(req, res) {
             try {
                 const user = await User.findById(req.params.userId)
@@ -39,7 +39,7 @@ const userController = {
                 res.status(400).json(err);
             }
         },
-    // Update a user
+    // Update a user by ID
     async updateUser(req, res) {
             try {
                 const user = await User.findByIdAndUpdate(
@@ -56,7 +56,7 @@ const userController = {
                 res.status(500).json(err);
             }
         },
-    // Delete a user
+    // Delete a user by ID
     async deleteUser(req, res) {
             try {
                 const user = await User.findByIdAndDelete(
@@ -71,7 +71,7 @@ const userController = {
                 res.status(500).json(err);
             }
         },
-    // Modify friends list
+    // Helper function to modify the friends list
     async modifyFriendsList(req, res, modifier) {
         try {
             const user = await User.findByIdAndUpdate(
@@ -88,13 +88,13 @@ const userController = {
             res.status(500).json(err);
         }
     },
-// Add a friend
+// Add a friend to a user 
 async addFriend(req, res){
     return userController.modifyFriendsList(req, res, {
         $addToSet: { friends: req.params.friendId }
     });
 },
-// Delete a friend
+// Delete a friend from a user
     async deleteFriend(req, res){
         return userController.modifyFriendsList(req, res, {
             $pull: { friends: req.params.friendId }
