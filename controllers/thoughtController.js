@@ -15,14 +15,16 @@ const thoughtController = {
     // Get a single thought by ID 
     async getThought(req, res) {
         try {
-            const thought = await Thought.findOne(req.params.thoughtId);
+            // console.log('Received thought ID:', req.params.thoughtId); // Debugging
+            const thought = await Thought.findById(req.params.thoughtid);
+            // console.log('Found thought:', thought); // Debugging
             if (!thought) {
             return res.status(404).json({ message: 'Cannot find thought with that ID' })
             }
             return res.status(200).json(thought);
         } 
         catch (err) {
-            console.log(err);
+            console.error(err);
             return res.status(500).json(err);
         }
 },
