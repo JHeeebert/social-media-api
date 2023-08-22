@@ -3,7 +3,7 @@ const { User, Thought } = require('../models');
 // Creating the User Controller
 const userController = {
     // Get all users with thoughts and friends populated
-    async getUsers(res) {
+    async getUsers(req, res) {
         try {
             const users = await User.find()
                 .populate('thoughts friends', '-__v')
@@ -11,7 +11,7 @@ const userController = {
             return res.status(200).json(users);
         } catch (err) {
             console.log(err);
-            res.status(500).json(err);
+            return res.status(500).json(err);
         }
     },
         // Get a single user by ID with thoughts and friends populated
@@ -26,7 +26,7 @@ const userController = {
                 return res.status(200).json(user);
             } catch (err) {
                 console.log(err);
-                res.status(500).json(err);
+                return res.status(500).json(err);
             }
         },
     // Create a new user
@@ -36,7 +36,7 @@ const userController = {
                 return res.status(200).json(user);
             } catch (err) {
                 console.log(err);
-                res.status(400).json(err);
+                return res.status(400).json(err);
             }
         },
     // Update a user by ID
@@ -53,7 +53,7 @@ const userController = {
                 return res.status(200).json(user);
             } catch (err) {
                 console.log(err);
-                res.status(500).json(err);
+                return res.status(500).json(err);
             }
         },
     // Delete a user by ID
@@ -68,15 +68,13 @@ const userController = {
                 return res.status(200).json(user);
             } catch (err) {
                 console.log(err);
-                res.status(500).json(err);
+                return res.status(500).json(err);
             }
         },
     // Helper function to modify the friends list
     async modifyFriendsList(req, res, modifier) {
         try {
-            const user = await User.findByIdAndUpdate(
-                { _id: req.params.userId },
-                { $pull: { friends: req.params.friendId } },
+            const user = await User.findByIdAndUpdate(req.params.userId, modifier, 
                 { new: true, runValidators: true }
             ).lean()
             if (!user) {
@@ -85,7 +83,7 @@ const userController = {
             return res.status(200).json(user);
         } catch (err) {
             console.log(err);
-            res.status(500).json(err);
+            return res.status(500).json(err);
         }
     },
 // Add a friend to a user 

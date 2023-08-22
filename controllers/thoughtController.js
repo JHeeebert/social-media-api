@@ -2,7 +2,7 @@ const { User, Thought } = require('../models');
 
 const thoughtController = {
     // Get all thoughts
-    async getThoughts(res) {
+    async getThoughts(req, res) {
         try {
             const thoughts = await Thought.find()
             return res.status(200).json(thoughts);
@@ -15,7 +15,7 @@ const thoughtController = {
     // Get a single thought by ID 
     async getThought(req, res) {
         try {
-            const thought = await Thought.findById(req.params.thoughtId);
+            const thought = await Thought.findOne(req.params.thoughtId);
             if (!thought) {
             return res.status(404).json({ message: 'Cannot find thought with that ID' })
             }
@@ -78,7 +78,7 @@ async modifyReactionList(req, res, modifier) {
         const reaction = await Thought.findByIdAndUpdate(
             req.params.thoughtId,
             modifier,
-            { new: true, runValidators: true }
+            { runValidators: true, new: true }
             );
     if (!reaction) {
         return res.status(404)({ message: 'Cannot find thought with that ID' })
