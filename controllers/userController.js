@@ -59,7 +59,7 @@ const userController = {
     // Delete a user
     async deleteUser(req, res) {
             try {
-                const user = await User.findOneAndDelete(
+                const user = await User.findByIdAndDelete(
                     { _id: req.params.userId }
                 ).lean()
                 if (!user) {
@@ -74,7 +74,7 @@ const userController = {
     // Modify friends list
     async modifyFriendsList(req, res, modifier) {
         try {
-            const user = await User.findOneAndUpdate(
+            const user = await User.findByIdAndUpdate(
                 { _id: req.params.userId },
                 { $pull: { friends: req.params.friendId } },
                 { new: true, runValidators: true }
