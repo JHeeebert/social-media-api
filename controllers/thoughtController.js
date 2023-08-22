@@ -1,8 +1,8 @@
 const { User, Thought } = require('../models');
 
-//  Create the thought controller
 const thoughtController = {
-    async getThoughts(req, res) {
+    // Get all thoughts
+    async getThoughts(res) {
         try {
             const thoughts = await Thought.find()
             return res.status(200).json(thoughts);
@@ -12,12 +12,12 @@ const thoughtController = {
             return res.status(500).json(err);
         }
     },
-    // Get a thought by 
+    // Get a single thought by ID 
     async getThought(req, res) {
         try {
-            const thought = await Thought.findById(req.params.id);
+            const thought = await Thought.findById(req.params.thoughtId);
             if (!thought) {
-                return res.status(404)({ message: 'Cannot find thought with that ID' })
+            return res.status(404).json({ message: 'Cannot find thought with that ID' })
             }
             return res.status(200).json(thought);
         } 
@@ -26,7 +26,7 @@ const thoughtController = {
             return res.status(500).json(err);
         }
 },
-// Create a thought
+// Create a new thought
 async createThought(req, res) {
     try {
         const thought = await Thought.create(req.body);
@@ -41,15 +41,15 @@ async createThought(req, res) {
         return res.status(500).json(err);
     }
 },
-// Update thought
+// Update existing thought by ID
     async updateThought(req, res) {
         try {
             const thought = await Thought.findByIdAndUpdate(
             req.params.thoughtId,
             { $set: req.body },
-            { new: true, runValidators: true });
+            { runValidators: true, new: true });
             if (!thought) {
-                return res.status(404)({ message: 'Cannot find thought with that ID' })
+                return res.status(404).json({ message: 'Cannot find thought with that ID' })
             }
             return res.status(200).json(thought);
         }
@@ -58,21 +58,21 @@ async createThought(req, res) {
             return res.status(500).json(err);
         }
     },
-// Delete a thought
+// Delete a thought by ID
     async deleteThought(req, res) {
         try {
             const thought = await Thought.findByIdAndDelete(req.params.thoughtId);
             if (!thought) {
                 return res.status(404)({ message: 'Cannot find thought with that ID' })
             }
-            return res.status(200).json({message: 'thought and reactions deleted sucessfully'});
+            return res.status(200).json({message: 'Thought and reactions deleted sucessfully'});
         }
         catch (err) {
             console.log(err);
             return res.status(500).json(err);
         }
     },
-// Modify reaction list
+// Helper function to modify the reaction list
 async modifyReactionList(req, res, modifier) {
     try {
         const reaction = await Thought.findByIdAndUpdate(
@@ -90,16 +90,16 @@ catch (err) {
     return res.status(500).json(err);
 }
 },
-// Add reaction
+// Add reaction to a thought
 async addReaction(req, res) {
     return thoughtController.modifyReactionList(req, res, {
-        $addToSet: { reaction: req.body },
+        $addToSet: { reactions: req.body },
     });
 },  
-// Delete reaction
+// Delete reaction from a thought
 async deleteReaction(req, res) {
     return thoughtController.modifyReactionList(req, res, {
-        $pull: { reaction: { _id: req.params.reactionId } },
+        $pull: { reactions: { _id: req.params.reactionId } },
     });
 },
 };
