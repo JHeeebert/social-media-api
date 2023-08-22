@@ -75,7 +75,7 @@ const userController = {
     async modifyFriendsList(req, res, modifier) {
         try {
             const user = await User.findByIdAndUpdate(req.params.userId, modifier, 
-                { new: true, runValidators: true }
+                { runValidators: true, new: true }
             ).lean()
             if (!user) {
                 res.status(404).json({ message: 'No user found with this id!' });

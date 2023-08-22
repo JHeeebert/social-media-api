@@ -16,7 +16,7 @@ const thoughtController = {
     async getThought(req, res) {
         try {
             // console.log('Received thought ID:', req.params.thoughtId); // Debugging
-            const thought = await Thought.findById(req.params.thoughtid);
+            const thought = await Thought.findById(req.params.thoughtId);
             // console.log('Found thought:', thought); // Debugging
             if (!thought) {
             return res.status(404).json({ message: 'Cannot find thought with that ID' })
@@ -83,7 +83,7 @@ async modifyReactionList(req, res, modifier) {
             { runValidators: true, new: true }
             );
     if (!reaction) {
-        return res.status(404)({ message: 'Cannot find thought with that ID' })
+        return res.status(404).json({ message: 'Cannot find thought with that ID' })
     }
     return  res.status(200).json(reaction);
 } 
