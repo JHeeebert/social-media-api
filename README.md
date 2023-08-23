@@ -30,23 +30,23 @@ To install and run the , follow these steps: <br>
 Get all users <br>
 ![All users](/assets/images/getAllUsers.png) <br>
 Create user <br>
-![Create user](/assets/images) <br>
+![Create user](/assets/images/createUser.png) <br>
 Get user by id <br>
-![Get user by id](/assets/images)
+![Get user by id](/assets/images/getUserById.png) <br>
 Update user <br>
-![Update user](/assets/images) <br>
+![Update user](/assets/images/updateUser.png) <br>
 Create a thought <br>
-![Create a thought](/assets/images) <br>
+![Create a thought](/assets/images/createAThought.png) <br>
 Get all thoughts <br>
 ![Get all thoughts](/assets/images/getAllThoughts.png) <br>
 Get thought by id <br>
-![Get thought by id](/assets/images) <br>
+![Get thought by id](/assets/images/getThoughtById.png) <br>
 Update thought <br>
-![Update thought](/assets/images) <br>
+![Update thought](/assets/images/updateThought.png) <br>
 Add Reaction <br>
-![Add Reaction](/assets/images) <br>
+![Add Reaction](/assets/images/addReaction.png) <br>
 Add Friend <br>
-![Add friend](/assets/images) <br>
+![Add friend](/assets/images/addFriend.png) <br>
 <br>
 # License 📂
    <br> 
