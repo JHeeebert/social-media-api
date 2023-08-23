@@ -116,6 +116,6 @@ https://drive.google.com/file/d/1KzJAfy_5K_RQdmTxQjLg2-guaKVkJlS2/view
 # Questions ❓📧❔
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/social-media-api) <br>
-* If you have any questions about the repo, open an issue @ link above or contact me directly at:  📧 wdfuzz8823@gmail.com 📧. <br>
+* If you have any questions about the repo, open an issue @ link above or contact me directly at:  📧 JheeebertWD@gmail.com 📧. <br>
 * You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. <br>
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)

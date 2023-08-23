@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(routes);
 // Connection callback for DB connection
 db.once('open', () => {
-    // Server will listen on specified port
+// Server will listen on specified port
     app.listen(PORT, () => {
         console.log(`Server is running on port ${PORT}!`);
     });
