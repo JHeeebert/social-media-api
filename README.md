@@ -1,4 +1,4 @@
-# social-media-api 📱
+# Social-Media-Api 📱
 
 # Description 📈
 
@@ -10,7 +10,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 # Table of Contents 📓
 
-- [social-media-api 📱](#social-media-api-)
+- [Social-Media-Api 📱](#social-media-api-)
 - [Description 📈](#description-)
 - [Table of Contents 📓](#table-of-contents-)
 - [Installation 💻](#installation-)
