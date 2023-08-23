@@ -7,11 +7,25 @@ AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ```
+# Acceptance Criteria 📝
+
+```md
+GIVEN a social network API
+WHEN I enter the command to invoke the application
+THEN my server is started and the Mongoose models are synced to the MongoDB database
+WHEN I open API GET routes in Insomnia for users and thoughts
+THEN the data for each of these routes is displayed in a formatted JSON
+WHEN I test API POST, PUT, and DELETE routes in Insomnia
+THEN I am able to successfully create, update, and delete users and thoughts in my database
+WHEN I test API POST and DELETE routes in Insomnia
+THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
+```
 
 # Table of Contents 📓
 
 - [Social-Media-Api 📱](#social-media-api-)
 - [Description 📈](#description-)
+- [Acceptance Criteria 📝](#acceptance-criteria-)
 - [Table of Contents 📓](#table-of-contents-)
 - [Installation 💻](#installation-)
 - [Usage 📎](#usage-)
@@ -19,7 +33,7 @@ SO THAT my website can handle large amounts of unstructured data
 - [Badges 🛡️](#badges-️)
 - [Contributing 🔍](#contributing-)
 - [Video Walk-Through Video 🎥](#video-walk-through-video-)
-- [Questions ☎️💻📱](#questions-️)
+- [Questions ❓📧❔](#questions-)
 
 # Installation 💻
 
@@ -99,7 +113,7 @@ https://drive.google.com/file/d/15hsn3mrf-VS7aj8IH19IeVm71knUE4ow/view <br>
 <strong>Insomnia Video Walk-Through:</strong> <br>
 https://drive.google.com/file/d/1KzJAfy_5K_RQdmTxQjLg2-guaKVkJlS2/view
 
-# Questions ☎️💻📱
+# Questions ❓📧❔
 
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/student-stats-backend) <br>
 * If you have any questions about the repo, open an issue @ link above or contact me directly at:  📧 wdfuzz8823@gmail.com 📧. <br>
