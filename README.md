@@ -27,30 +27,32 @@ To install and run the , follow these steps: <br>
 # Usage 📎
 1. In Insomnia Core, use API GET routes to view all categories, products, and tags formatted in JSON.
 2. Use Insomnia Core's API POST, PUT, and DELETE routes to create, update, and delete data from the database. <br>
-Get all users <br>
+<strong>Get all users</strong> <br>
 ![All users](/assets/images/getAllUsers.png) <br>
-Create user <br>
+<strong>Create user</strong> <br>
 ![Create user](/assets/images/createUser.png) <br>
-Get user by id <br>
+<strong>Get user by id</strong> <br>
 ![Get user by id](/assets/images/getUserById.png) <br>
-Update user <br>
+<strong>Update user</strong> <br>
 ![Update user](/assets/images/updateUser.png) <br>
-Create a thought <br>
+<strong>Create a thought</strong> <br>
 ![Create a thought](/assets/images/createAThought.png) <br>
-Get all thoughts <br>
+<strong>Get all thoughts</strong> <br>
 ![Get all thoughts](/assets/images/getAllThoughts.png) <br>
-Get thought by id <br>
+<strong>Get thought by id</strong> <br>
 ![Get thought by id](/assets/images/getThoughtById.png) <br>
-Update thought <br>
+<strong>Update thought</strong> <br>
 ![Update thought](/assets/images/updateThought.png) <br>
-Add Reaction <br>
+<strong>Add Reaction</strong> <br>
 ![Add Reaction](/assets/images/addReaction.png) <br>
-Add Friend <br>
+<strong>Add Friend</strong> <br>
 ![Add friend](/assets/images/addFriend.png) <br>
 <br>
+
 # License 📂
-   <br> 
-   <br> 
+
+  [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
+ 
 
 # Badges 🛡️
 [![GitHub](https://img.shields.io/badge/--181717?logo=github&logoColor=ffffff)](https://github.com/)
@@ -59,19 +61,24 @@ Add Friend <br>
 [![.gitignore](https://badgen.net/badge/icon/git?icon=git&label)](https://git-scm.com/doc)
 [![Node.js](https://badgen.net/badge/icon/nodejs?icon=nodejs&label)](https://nodejs.org/)
 [![npm](https://badgen.net/badge/icon/npm?icon=npm&label)](https://npmjs.com/)
-![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
-![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+[![Express.js](https://badgen.net/badge/icon/express?icon=express&label)](https://expressjs.com/)
+[![MySQL2](https://badgen.net/badge/icon/mysql2?icon=npm&label)](https://www.npmjs.com/package/mysql2)
+[![Sequelize](https://badgen.net/badge/icon/sequelize?icon=sequelize&label)](https://sequelize.org/)
+[![dotenv](https://badgen.net/badge/icon/dotenv?icon=npm&label)](https://www.npmjs.com/package/dotenv)
+[![Inquirer](https://img.shields.io/badge/Inquirer-8.2.4-blue)](https://github.com/SBoudrias/Inquirer.js)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+![CodePen](https://img.shields.io/badge/Codepen-000000?style=for-the-badge&logo=codepen&logoColor=white)
 # Contributing 🔍
   [Contributors Covenant](https://www.contributor-covenant.org/) <br>
 1. Fork the repository on GitHub.
 2. Create a new branch with a descriptive name: `git checkout -b my-branch`
 3. Make the necessary changes and commit them: ` git commit -m "Description of changes"`
-4. Push your changes to your forked repository: `git push origin my-branch` <br>
+4. Push your changes to your forked repository: `git push origin my-branch` 
+<br>
 [![GitHub commits](https://badgen.net/github/commits/Jheeebert/social-media-api)](https://GitHub.com/Jheeebert/social-media-api/commit/)
 [![GitHub latest commit](https://badgen.net/github/last-commit/Jheeebert/social-media-api)](https://GitHub.com/Jheeebert/social-media-api/commit/)
 [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/social-media-api.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/social-media-api/network/)
-  <br>
+<br>
 
 # Walk-Through Video
 VS Code Walk-Through: <br>
@@ -82,4 +89,5 @@ https://drive.google.com/file/d/1KzJAfy_5K_RQdmTxQjLg2-guaKVkJlS2/view
 # Questions ☎️💻📱
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/student-stats-backend) <br>
   If you have any questions about the repo, open an issue @ link above or contact me directly at 📧 wdfuzz8823@gmail.com 📧. <br>
-  You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. 
+  You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖.  <br>
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
