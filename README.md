@@ -1,4 +1,4 @@
-# social-media-api
+# social-media-api 📱
 
 # Description 📈
 
@@ -10,7 +10,7 @@ SO THAT my website can handle large amounts of unstructured data
 
 # Table of Contents 📓
 
-- [social-media-api](#social-media-api)
+- [social-media-api 📱](#social-media-api-)
 - [Description 📈](#description-)
 - [Table of Contents 📓](#table-of-contents-)
 - [Installation 💻](#installation-)
@@ -18,7 +18,7 @@ SO THAT my website can handle large amounts of unstructured data
 - [License 📂](#license-)
 - [Badges 🛡️](#badges-️)
 - [Contributing 🔍](#contributing-)
-- [Video Walk-Through Video](#video-walk-through-video)
+- [Video Walk-Through Video 🎥](#video-walk-through-video-)
 - [Questions ☎️💻📱](#questions-️)
 
 # Installation 💻
@@ -92,7 +92,7 @@ SO THAT my website can handle large amounts of unstructured data
    [![GitHub forks](https://img.shields.io/github/forks/Jheeebert/social-media-api.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/Jheeebert/social-media-api/network/)
    <br>
 
-# Video Walk-Through Video
+# Video Walk-Through Video 🎥
 
 <strong>VS Code Video Walk-Through:</strong> <br>
 https://drive.google.com/file/d/15hsn3mrf-VS7aj8IH19IeVm71knUE4ow/view <br>
