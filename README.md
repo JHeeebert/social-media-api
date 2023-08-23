@@ -28,9 +28,9 @@ To install and run the , follow these steps: <br>
 1. In Insomnia Core, use API GET routes to view all categories, products, and tags formatted in JSON.
 2. Use Insomnia Core's API POST, PUT, and DELETE routes to create, update, and delete data from the database. <br>
 Get all users <br>
-![All users](/assets/images/)
+![All users](/assets/images/) <br>
 Create user <br>
-![Create user](/assets/images)
+![Create user](/assets/images) <br>
 Get user by id <br>
 ![Get user by id](/assets/images)
 Update user <br>
@@ -79,5 +79,4 @@ Add Friend <br>
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/social-media-api) <br>
   If you have any questions about the repo, open an issue @ link above or contact me directly at 📧 jheeebertwd@gmail.com 📧. <br>
   You can find more of my work at 🔖 [Jheeebert][def] 🔖. 
-
-[def]: https://github.com/Jheeebert/**
+[def]: https://github.com/Jheeebert/
