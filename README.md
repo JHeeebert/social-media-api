@@ -74,6 +74,10 @@ Add Friend <br>
   <br>
 
 # Walk-Through Video
+VS Code Walk-Through: <br>
+https://drive.google.com/file/d/15hsn3mrf-VS7aj8IH19IeVm71knUE4ow/view <br>
+Insomnia Video Walk-Through: <br>
+https://drive.google.com/file/d/1KzJAfy_5K_RQdmTxQjLg2-guaKVkJlS2/view
 
 # Questions ☎️💻📱
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/student-stats-backend) <br>
