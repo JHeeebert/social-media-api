@@ -1,4 +1,4 @@
-**# social-media-api
+# social-media-api
 
 # Description 📈
 ```md
@@ -76,7 +76,6 @@ Add Friend <br>
 # Walk-Through Video
 
 # Questions ☎️💻📱
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/social-media-api) <br>
-  If you have any questions about the repo, open an issue @ link above or contact me directly at 📧 jheeebertwd@gmail.com 📧. <br>
-  You can find more of my work at 🔖 [Jheeebert][def] 🔖. 
-[def]: https://github.com/Jheeebert/
+[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/student-stats-backend) <br>
+  If you have any questions about the repo, open an issue @ link above or contact me directly at 📧 wdfuzz8823@gmail.com 📧. <br>
+  You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. 

@@ -72,7 +72,7 @@ const userController = {
             }
         },
     // Helper function to modify the friends list
-    async modifyFriendsList(req, res, modifier) {
+    async updateFriendsList(req, res, modifier) {
         try {
             const user = await User.findByIdAndUpdate(req.params.userId, modifier, 
                 { runValidators: true, new: true }
@@ -88,13 +88,13 @@ const userController = {
     },
 // Add a friend to a user 
 async addFriend(req, res){
-    return userController.modifyFriendsList(req, res, {
+    return userController.updateFriendsList(req, res, {
         $addToSet: { friends: req.params.friendId }
     });
 },
 // Delete a friend from a user
     async deleteFriend(req, res){
-        return userController.modifyFriendsList(req, res, {
+        return userController.updateFriendsList(req, res, {
             $pull: { friends: req.params.friendId }
         });
     }

@@ -75,7 +75,7 @@ async createThought(req, res) {
         }
     },
 // Helper function to modify the reaction list
-async modifyReactionList(req, res, modifier) {
+async updateReactionList(req, res, modifier) {
     try {
         const reaction = await Thought.findByIdAndUpdate(
             req.params.thoughtId,
@@ -94,13 +94,13 @@ catch (err) {
 },
 // Add reaction to a thought
 async addReaction(req, res) {
-    return thoughtController.modifyReactionList(req, res, {
+    return thoughtController.updateReactionList(req, res, {
         $addToSet: { reactions: req.body },
     });
 },  
 // Delete reaction from a thought
 async deleteReaction(req, res) {
-    return thoughtController.modifyReactionList(req, res, {
+    return thoughtController.updateReactionList(req, res, {
         $pull: { reactions: { _id: req.params.reactionId } },
     });
 },
