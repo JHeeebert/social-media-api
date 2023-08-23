@@ -28,7 +28,7 @@ To install and run the , follow these steps: <br>
 1. In Insomnia Core, use API GET routes to view all categories, products, and tags formatted in JSON.
 2. Use Insomnia Core's API POST, PUT, and DELETE routes to create, update, and delete data from the database. <br>
 Get all users <br>
-![All users](/assets/images/) <br>
+![All users](/assets/images/getAllUsers.png) <br>
 Create user <br>
 ![Create user](/assets/images) <br>
 Get user by id <br>
@@ -38,7 +38,7 @@ Update user <br>
 Create a thought <br>
 ![Create a thought](/assets/images) <br>
 Get all thoughts <br>
-![Get all thoughts](/assets/images) <br>
+![Get all thoughts](/assets/images/getAllThoughts.png) <br>
 Get thought by id <br>
 ![Get thought by id](/assets/images) <br>
 Update thought <br>
