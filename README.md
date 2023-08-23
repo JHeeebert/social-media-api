@@ -1,4 +1,4 @@
-# social-media-api
+**# social-media-api
 
 # Description 📈
 ```md
@@ -6,7 +6,7 @@ AS A social media startup
 I WANT an API for my social network that uses a NoSQL database
 SO THAT my website can handle large amounts of unstructured data
 ```
-  # Table of Contents 📓
+# Table of Contents 📓
   - [Installation](#installation)  
   - [Usage](#usage) 
   - [License](#license) 
@@ -27,26 +27,27 @@ To install and run the , follow these steps: <br>
 # Usage 📎
 1. In Insomnia Core, use API GET routes to view all categories, products, and tags formatted in JSON.
 2. Use Insomnia Core's API POST, PUT, and DELETE routes to create, update, and delete data from the database. <br>
-Get all users
+Get all users <br>
 ![All users](/assets/images/)
-Create user
+Create user <br>
 ![Create user](/assets/images)
-Get user by id
+Get user by id <br>
 ![Get user by id](/assets/images)
-Update user
+Update user <br>
 ![Update user](/assets/images)
-Create a thought
+Create a thought <br>
 ![Create a thought](/assets/images)
-Get all thoughts
+Get all thoughts <br>
 ![Get all thoughts](/assets/images)
-Get thought by id
+Get thought by id <br>
 ![Get thought by id](/assets/images)
-Update thought
+Update thought <br>
 ![Update thought](/assets/images)
-Add Reaction
+Add Reaction <br>
 ![Add Reaction](/assets/images)
-Add Friend
+Add Friend <br>
 ![Add friend](/assets/images)
+<br>
 # License 📂
    <br> 
    <br> 
@@ -77,4 +78,6 @@ Add Friend
 # Questions ☎️💻📱
 [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://GitHub.com/Jheeebert/social-media-api) <br>
   If you have any questions about the repo, open an issue @ link above or contact me directly at 📧 jheeebertwd@gmail.com 📧. <br>
-  You can find more of my work at 🔖 [Jheeebert](https://github.com/Jheeebert/) 🔖. 
+  You can find more of my work at 🔖 [Jheeebert][def] 🔖. 
+
+[def]: https://github.com/Jheeebert/**
