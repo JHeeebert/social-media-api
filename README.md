@@ -34,19 +34,19 @@ Create user <br>
 Get user by id <br>
 ![Get user by id](/assets/images)
 Update user <br>
-![Update user](/assets/images)
+![Update user](/assets/images) <br>
 Create a thought <br>
-![Create a thought](/assets/images)
+![Create a thought](/assets/images) <br>
 Get all thoughts <br>
-![Get all thoughts](/assets/images)
+![Get all thoughts](/assets/images) <br>
 Get thought by id <br>
-![Get thought by id](/assets/images)
+![Get thought by id](/assets/images) <br>
 Update thought <br>
-![Update thought](/assets/images)
+![Update thought](/assets/images) <br>
 Add Reaction <br>
-![Add Reaction](/assets/images)
+![Add Reaction](/assets/images) <br>
 Add Friend <br>
-![Add friend](/assets/images)
+![Add friend](/assets/images) <br>
 <br>
 # License 📂
    <br> 
